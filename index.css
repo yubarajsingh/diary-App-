@@ -1,0 +1,83 @@
+ body {
+    margin: 5%;
+    font-family: 'Gill Sans', 'Gill Sans MT';
+    display: grid;
+    justify-content: center;
+ }
+
+ .title{
+     color: #16697A;
+     text-align: center;
+     margin-bottom: 1em;
+ }
+
+ .entry-textbox{
+     background-color: rgba(255, 166, 0, 0.747);
+    width: 20em;
+    height: 10em;
+    padding: 1em;
+    border-radius: 25px;
+    border: unset;
+    margin-bottom: 1em;
+ }
+ /*
+  - Go over to the index.html file and give the button a class of "button"
+  - Back in the index.css file, target the button using its class
+  - Give the button rounded edges using the border-radius property
+  - Use the padding property to add space between the button's text and its edges
+  - move the button to the right of the page
+*/
+.button{
+    border-radius: 25px;
+    border: unset;
+    background-color: #16697A;
+    padding: 1em;
+    margin-left: 60%;
+}
+/* 
+    Pause the video, go over to the input textbox and start typing.
+    Notice the not-so-good-looking black border outline on our textbox.
+    Play when you see it.
+    
+    hint: search for "How to remove input field border outline on focus CSS"
+ */
+ .entry-textbox:focus{
+    outline: none;
+ }
+
+ /* 
+    - Give the entries section the background color, #16697A
+      (or any other color of your choice)
+    - Give it the text color, #EDE7E3
+      (if you used your own color, this should be something that is visible
+       on the background)
+    - Like we did before, give it rounded edges.
+ */
+ #entries{
+     background-color: #16697A;
+     color: #EDE7E3;
+     font-family: cursive;
+     padding: 2em;
+     border: unset;
+     max-width: 20em;
+     border-radius: 25px;
+ }
+
+   /*
+    - Target the div for the display-entry buttons and give it a
+        bottom padding of 1em to separate it from the entry texts
+    - Target the display-entry buttons and give each of them a margin
+        of 0.2em to separate them from one another
+    - Use the hover pseudo-class to change the cursor on the
+        display-entry buttons to "pointer" whenever they are hovered on
+ */
+.entries-nav{
+   padding-bottom: 1em; 
+}
+ .displayEntry{
+    margin:0.2em;
+ }
+
+ .displayEntry:hover{
+    cursor: pointer;
+ }
